@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", sans-serif;
+        }
+
+        .content1 {
+            display: flex;
+            position: fixed;
+            background-color: white;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 1px solid orange;
+            z-index: 2;
+            height: 40px;
+        }
+
+        .content1_list {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-between;
+
+        }
+
+        .content1_list a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .content1_list a:nth-child(1) {
+            margin-right: 45px;
+        }
+
+        .content1_list a:nth-child(2) {
+            margin-right: 45px;
+        }
+
+        .content1_heading,
+        .content1_para,
+        .content1_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content1_heading h1 {
+            font-size: 18px;
+
+        }
+
+        .content1_heading {
+            margin-left: 20px;
+        }
+
+        .content1_para {
+            margin-left: 40px;
+            margin-right: 840px;
+            font-weight: 600;
+        }
+
+        .content1_list {
+            font-weight: 600;
+        }
+
+        .content2 {
+            display: flex;
+            background-color: white;
+            margin-top: 108px;
+            box-sizing: border-box;
+        }
+
+        .content2_circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quarter {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+
+        .top-left {
+            background-color: yellow;
+            top: 0;
+            left: 0;
+        }
+
+        .top-right {
+            background-color: green;
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            background-color: red;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right {
+            background-color: blue;
+            bottom: 0;
+            right: 0;
+        }
+
+        .content2_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            height: 250px;
+            margin-left: 50px;
+            position: static;
+        }
+
+        .content2_img img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .content2_img strong {
+            position: absolute;
+            top: 380px;
+            right: 380px;
+            font-style: italic;
+            background-color: orange;
+            padding: 8px 15px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .content3 {
+            margin-top: 105px;
+            margin-left: 160px;
+
+        }
+
+        .content3 h1 {
+            color: orange;
+            font-style: italic;
+        }
+
+        .content4 {
+            display: flex;
+            margin-top: 20px;
+            flex-direction: row;
+            box-sizing: border-box;
+            gap: 10px;
+            margin-bottom: 50px;
+
+        }
+
+        .content4_img1,
+        .content4_img2,
+        .content4_img3 {
+            width: 390px;
+            height: 350px;
+            position: relative;
+        }
+
+        .content4_img1 img,
+        .content4_img2 img,
+        .content4_img3 img {
+            object-fit: cover;
+            width: 390px;
+            height: 350px;
+        }
+
+        .content4_img1 p,
+        .content4_img2 p,
+        .content4_img3 p {
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgb(18, 237, 18);
+            padding: 5px;
+            border-radius: 1px;
+            border: 1px;
+            font-size: 15px;
+
+        }
+
+        .content4_img1 {
+            margin-left: 160px;
+        }
+        .content5 {
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgb(244, 171, 36);
+            padding: 15px;
+           
+        }
+        .content5_p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content5_p p {
+            font-style: italic;
+            font-size: 18px;
+            color: rgb(41, 41, 126);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content1">
+        <div class="content1_heading">
+            <h1>CLB TIN HỌC</h1>
+        </div>
+        <div class="content1_para">
+            <p>Đại học Công Nghiệp Hà Nội</p>
+        </div>
+        <div class="content1_list">
+            <a href="#">Activity</a>
+            <a href="#">Learning</a>
+            <a href="#">Event</a>
+        </div>
+    </div>
+    <div class="content2">
+        <div class="content2_circle">
+            <div class="quarter top-left"></div>
+            <div class="quarter top-right"></div>
+            <div class="quarter bottom-left"></div>
+            <div class="quarter bottom-right"></div>
+        </div>
+        <div class="content2_img">
+            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/453749530_1081121393836345_5677193696328816366_n.png?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHl2OpDE3Cu4_0x-YxG9Ewxni0nqeMe6zOeLSep4x7rM4gIU-ezGyKBfz1pVWe5HafFkKhTGBCH-j9G-GldhCJj&_nc_ohc=f5z_zRb3fb8Q7kNvgHGDyBK&_nc_ht=scontent.fhan14-1.fna&oh=00_AYCHEHysbld3jXP_ftpVQjFqnW7Tkw-4aLnOWoVzB3hFmQ&oe=66BA5C53"
+                alt="">
+            <div><strong>Truyền lửa đam mê</strong></div>
+        </div>
+    </div>
+    <div class="content3">
+        <h1>Activity</h1>
+    </div>
+    <div class="content4">
+        <div class="content4_img1">
+            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-9/76996773_2649458678448990_4362168622055948288_n.jpg?stp=dst-jpg_p180x540&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFlTv898UYcRhGGymIvMorLFdCRs7XZEmEV0JGztdkSYVrPlD9IR9dBCXcZy_hJOec-qJV0Obytk7D7jLq93Kq7&_nc_ohc=-YUSrEIKoD8Q7kNvgFCYl3w&_nc_ht=scontent.fhan14-1.fna&oh=00_AYBB8s_TCZQ7JtQXK3MEBZQiwrFYYRUMxZMZQDSkHcJt7Q&oe=66DD8E1C"
+                alt="">
+            <p>Du lịch năm 2019</p>
+        </div>
+        <div class="content4_img2">
+            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/440374075_1026514112630407_4758948357733086711_n.jpg?stp=c52.0.206.206a_dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=714c7a&_nc_eui2=AeFyohqPGPjceou73mneEpK64HTppZUCNAfgdOmllQI0B4LN4Y7euvnr4LDaDklkEmbhxPiLLgBSgFUDPRLnetGY&_nc_ohc=S2cKmSJuZs8Q7kNvgFjw4cG&_nc_ht=scontent.fhan14-1.fna&oh=00_AYAs25CiyUvs-IuXcG6e-FaYLuq_korsvMclLTKSC3j7Bg&oe=66BBC21F"
+                alt="">
+            <p>Tech Club Championship</p>
+        </div>
+        <div class="content4_img3">
+            <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/421651883_947125837235902_4621540991883022125_n.jpg?stp=c34.0.206.206a_cp6_dst-jpg_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=714c7a&_nc_eui2=AeHrFKnbs_YMFFAPdFxRY9Oogl4wuQylAeqCXjC5DKUB6khnRxrzoNYxIjHbY5LruR4TuMWKqmx2-FzFYqIMum-G&_nc_ohc=m1YKAGl3XMYQ7kNvgEy-Nf6&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAhAD2SZpPCTXGewFh5jTlSYVyWRolSv5BVPCHj66fEsA&oe=66BBD21D"
+                alt="">
+            <p>Offline CTV Hana 2024</p>
+        </div>
+    </div>
+    <div class="content5">
+        <div class="content5_p"><p><strong>@ Copy right in 2024</strong></p></div>
+    </div>
+
+
+</body>
+
+</html>

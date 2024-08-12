@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", sans-serif;
+        }
+
+        body {
+            background-color: rgba(29, 91, 78, 255);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img1,
+        .img2 {
+            width: 230px;
+            height: 230px;
+        }
+
+        img {
+            object-fit: cover;
+            width: 230px;
+            border-radius: 50%;
+        }
+
+        .img1 img {
+            position: absolute;
+            top: 10px;
+            left: 400px;
+        }
+
+        .img2 img {
+            position: absolute;
+            top: 500px;
+            right: 430px;
+        }
+
+        .content {
+            top: 120px;
+            left: 480px;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 350px;
+            height: 500px;
+            position: absolute;
+            z-index: 1;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+
+        }
+
+        .content1_img {
+            width: 130px;
+            height: 130px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid green;
+            box-shadow: 0 0 20px 5px rgba(144, 194, 189, 1);
+
+        }
+
+        .content1_img img {
+            width: 85px;
+            border-radius: 50%;
+            border: 1px solid green;
+            box-shadow: 0 0 20px 5px rgba(144, 194, 189, 1);
+        }
+
+        .content1_img {
+            position: absolute;
+            top: 50px;
+            left: 115px;
+        }
+
+        .content2 {
+            position:absolute;
+            top: 200px;
+            left: 80px;
+        }
+
+        .content2 p {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .content3 {
+            position:absolute;
+            top: 230px;
+            left: 140px;
+        }
+
+        .content3 p {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .content4 {
+            display: flex;
+            position: absolute;
+            gap: 10px;
+            top: 260px;
+            left: 40px;
+        }
+        .content4_icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid green;
+            box-shadow: 0 0 20px 5px rgba(144, 194, 189, 1);
+            font-size: 30px;
+        }
+        .content5 {
+            display: flex;
+            position: absolute;
+            top: 350px;
+            left: 60px;
+            gap: 20px;
+        }
+        .content5_button {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            border: 2px solid green;
+            box-shadow: 0 0 20px 5px rgba(144, 194, 189, 1);
+            width: 110px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content5_button a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+
+        .content5_button:hover {
+            background-color: orange;
+        }
+        .content5_button a:hover {
+            color: white;
+        }
+
+        .content6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 35px;
+            left: 125px;
+        }
+
+        .content6 p {
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img1">
+            <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/453796991_1081121157169702_5312845850256596531_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFL2jJWF9Taq6zrVFlxbBHbae9zIBTWWRJp73MgFNZZEhguh4rFsrL8YwifkhejfHN5wc-Wzi38OmzpR0SpjMak&_nc_ohc=vLMsM_AhnooQ7kNvgHVBjZ4&_nc_ht=scontent.fhan14-2.fna&oh=00_AYASCd87qWuDcAfnYbEW-PHUD56bPzrQK4oRECCQtkb1Og&oe=66BBDAC4"
+                alt="">
+        </div>
+        <div class="img2">
+            <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/425689947_957084109573408_8322349563791655333_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEYt7v4ch1r7uq3Iy8gzzNo3NKwfXpsm9rc0rB9emyb2v_4sF-ovvDoDfepfF-mDB8NoNL2fCK1l-THLRGJtaQH&_nc_ohc=pmhfcAKWOjMQ7kNvgHpv8LE&_nc_ht=scontent.fhan14-2.fna&oh=00_AYCwQrzTXZ9e1X272pSvt5_GrlS7PmOYApLvjcqDSeB1VQ&oe=66BC09CC"
+                alt="">
+        </div>
+    </div>
+    <div class="content">
+        <div class="content1">
+            <div class="content1_img">
+                <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/445351512_1036672481614570_3759043079019191099_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHqaQg0Rm3L_SjDZgCtZgjhEJUMY7b_Xn4QlQxjtv9efmQfdJoKFVJLmdU7HE4msfoBWqQi2D-WayIPhmLSAHvI&_nc_ohc=tUmHQ2cI5h8Q7kNvgHh8EnR&_nc_ht=scontent.fhan14-3.fna&oh=00_AYCvxMo03Vxc1yFvXW_ccktz88IS94Z3vykzZKXBG8lmFQ&oe=66BBDF94"
+                    alt="">
+            </div>
+        </div>
+        <div class="content2">
+            <p>Câu lạc bộ tin học HIT</p>
+        </div>
+        <div class="content3">
+            <p>Something</p>
+        </div>
+        <div class="content4">
+            <div class="content4_icon">
+                <i class="fa-brands fa-youtube" style="color: #d31212;"></i>
+            </div>
+            <div class="content4_icon">
+                <i class="fa-brands fa-facebook" style="color:#1262ed;"></i>
+            </div>
+            <div class="content4_icon">
+                <i class="fa-brands fa-google" style="color: #1262ed;"></i>
+            </div>
+            <div class="content4_icon">
+                <i class="fa-solid fa-phone-volume" style="color: #11df59;"></i>
+            </div>
+        </div>
+        <div class="content5">
+            <div class="content5_button">
+                <a href="#">Message</a>
+            </div>
+            <div class="content5_button">
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+        <div class="content6">
+            <p>Have a nice day !</p>
+        </div>
+    </div>
+</body>
+
+</html>
